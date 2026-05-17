@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Bebas Neue', ui-sans-serif, system-ui, sans-serif;
+
+    /* Gym Color Palette - Light defaults with dark-mode overrides below */
+    --color-gym-950: #fafaf8;
+    --color-gym-900: #ffffff;
+    --color-gym-800: #efefe8;
+    --color-gym-700: #d8d8cf;
+    --color-gym-600: #b7b7ac;
+    --color-gym-500: #76766e;
+    --color-gym-400: #5f5f57;
+    --color-gym-300: #464640;
+    --color-gym-200: #30302c;
+    --color-gym-100: #1b1b18;
+    --color-gym-50: #10100f;
+
+    --color-orange-500: #FF6B2B;
+    --color-orange-400: #FF8F5C;
+    --color-orange-600: #E55A1F;
+    --color-lime-400: #C8FF2B;
+    --color-lime-500: #B5E620;
+    --color-lime-300: #D9FF66;
+
+    --color-accent: var(--color-orange-500);
+    --color-accent-content: var(--color-orange-500);
+    --color-accent-foreground: var(--color-white);
+}
+
+@layer theme {
+    .dark {
+        --color-gym-950: #0a0a0a;
+        --color-gym-900: #141414;
+        --color-gym-800: #1f1f1f;
+        --color-gym-700: #2a2a2a;
+        --color-gym-600: #3d3d3d;
+        --color-gym-500: #525252;
+        --color-gym-400: #737373;
+        --color-gym-300: #a3a3a3;
+        --color-gym-200: #d4d4d4;
+        --color-gym-100: #f5f5f5;
+        --color-gym-50: #fafaf8;
+
+        --color-accent: var(--color-orange-500);
+        --color-accent-content: var(--color-orange-400);
+        --color-accent-foreground: var(--color-white);
+    }
+}
+
+@layer utilities {
+    html:not(.dark) .text-white,
+    html:not(.dark) .hover\:text-white:hover,
+    html:not(.dark) .group:hover .group-hover\:text-white {
+        color: var(--color-gym-100);
+    }
+}
+
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    body {
+        font-family: var(--font-sans);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-display);
+        letter-spacing: 0.02em;
+    }
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply  !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+/* Custom gym scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-gym-900);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-gym-600);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-orange-500);
+}
+
+/* Gym-specific utility classes */
+.gym-gradient {
+    background: linear-gradient(135deg, var(--color-orange-500) 0%, var(--color-lime-400) 100%);
+}
+
+.gym-gradient-text {
+    background: linear-gradient(135deg, var(--color-orange-500) 0%, var(--color-lime-400) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gym-card {
+    background: var(--color-gym-900);
+    border: 1px solid var(--color-gym-700);
+    border-radius: 0.75rem;
+}
+
+.gym-card-light {
+    background: var(--color-white);
+    border: 1px solid var(--color-gym-200);
+    border-radius: 0.75rem;
+}

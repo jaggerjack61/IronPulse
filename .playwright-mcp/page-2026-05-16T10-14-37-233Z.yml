@@ -1,0 +1,82 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "IronPulse" [ref=e4] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img [ref=e6]
+        - generic [ref=e11]: IronPulse
+      - button "Toggle sidebar" [ref=e14]:
+        - img [ref=e15]
+    - navigation [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e20]: Platform
+        - generic [ref=e21]:
+          - link "Forums" [ref=e23] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/forums
+            - img [ref=e25]
+            - generic [ref=e27]: Forums
+          - link "Blog" [ref=e29] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/blog
+            - img [ref=e31]
+            - generic [ref=e33]: Blog
+    - navigation [ref=e35]:
+      - link "Website" [ref=e37] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img [ref=e39]
+        - generic [ref=e41]: Website
+  - banner [ref=e42]:
+    - button "Toggle sidebar" [ref=e43]:
+      - img [ref=e44]
+    - link "Log in" [ref=e46] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/login
+    - link "Register" [ref=e47] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000/register
+  - generic [ref=e50]:
+    - generic [ref=e54]:
+      - heading "FORUMS" [level=1] [ref=e55]
+      - paragraph [ref=e56]: Join the conversation. Share knowledge, ask questions, and connect with athletes who speak your language.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - link "General Discussion Talk about anything fitness related. 0 posts" [ref=e59] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/forums/general-discussion
+          - generic [ref=e61]:
+            - img [ref=e63]
+            - generic [ref=e65]:
+              - generic [ref=e66]: General Discussion
+              - paragraph [ref=e67]: Talk about anything fitness related.
+              - generic [ref=e68]: 0 posts
+        - link "Workout Routines Share and discuss workout plans. 0 posts" [ref=e69] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/forums/workout-routines
+          - generic [ref=e71]:
+            - img [ref=e73]
+            - generic [ref=e75]:
+              - generic [ref=e76]: Workout Routines
+              - paragraph [ref=e77]: Share and discuss workout plans.
+              - generic [ref=e78]: 0 posts
+        - link "Nutrition & Diet Meal plans, macros, and diet advice. 0 posts" [ref=e79] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/forums/nutrition-diet
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - generic [ref=e85]:
+              - generic [ref=e86]: Nutrition & Diet
+              - paragraph [ref=e87]: Meal plans, macros, and diet advice.
+              - generic [ref=e88]: 0 posts
+        - link "Supplements Discuss supplements and their effects. 0 posts" [ref=e89] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/forums/supplements
+          - generic [ref=e91]:
+            - img [ref=e93]
+            - generic [ref=e95]:
+              - generic [ref=e96]: Supplements
+              - paragraph [ref=e97]: Discuss supplements and their effects.
+              - generic [ref=e98]: 0 posts
+        - link "Progress Logs Share your transformation journey. 0 posts" [ref=e99] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/forums/progress-logs
+          - generic [ref=e101]:
+            - img [ref=e103]
+            - generic [ref=e105]:
+              - generic [ref=e106]: Progress Logs
+              - paragraph [ref=e107]: Share your transformation journey.
+              - generic [ref=e108]: 0 posts
+      - generic [ref=e109]: Latest Discussions
+  - generic:
+    - status

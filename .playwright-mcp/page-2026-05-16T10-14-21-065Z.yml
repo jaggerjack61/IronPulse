@@ -1,0 +1,60 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "IronPulse" [ref=e4] [cursor=pointer]:
+      - /url: http://127.0.0.1:8000
+      - img [ref=e6]
+      - generic [ref=e11]: IronPulse
+    - navigation [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e15]: Platform
+        - generic [ref=e16]:
+          - link "Forums" [ref=e18] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/forums
+            - img [ref=e20]
+            - generic [ref=e22]: Forums
+          - link "Blog" [ref=e24] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/blog
+            - img [ref=e26]
+            - generic [ref=e28]: Blog
+    - navigation [ref=e30]:
+      - link "Website" [ref=e32] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000
+        - img [ref=e34]
+        - generic [ref=e36]: Website
+    - generic [ref=e37]:
+      - link "Log in" [ref=e39] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/login
+        - img [ref=e41]
+        - generic [ref=e43]: Log in
+      - link "Register" [ref=e45] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/register
+        - img [ref=e47]
+        - generic [ref=e49]: Register
+  - generic [ref=e52]:
+    - generic [ref=e56]:
+      - heading "EXPERT BLOG" [level=1] [ref=e57]
+      - paragraph [ref=e58]: Science-backed articles, training tips, and nutrition insights from coaches and elite athletes.
+    - generic [ref=e60]:
+      - link "Top 5 Supplements for Muscle Growth Evidence-based supplements to support your gains. By Admin User · 2 days ago" [ref=e61] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/blog/top-5-supplements-muscle-growth
+        - generic [ref=e62]:
+          - img [ref=e64]
+          - generic [ref=e66]: Top 5 Supplements for Muscle Growth
+          - paragraph [ref=e67]: Evidence-based supplements to support your gains.
+          - paragraph [ref=e68]: By Admin User · 2 days ago
+      - link "The Importance of Nutrition in Fitness Why what you eat matters more than how you train. By Admin User · 5 days ago" [ref=e69] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/blog/importance-nutrition-fitness
+        - generic [ref=e70]:
+          - img [ref=e72]
+          - generic [ref=e74]: The Importance of Nutrition in Fitness
+          - paragraph [ref=e75]: Why what you eat matters more than how you train.
+          - paragraph [ref=e76]: By Admin User · 5 days ago
+      - link "Getting Started with Strength Training Learn the fundamentals of strength training for beginners. By Admin User · 1 week ago" [ref=e77] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/blog/getting-started-strength-training
+        - generic [ref=e78]:
+          - img [ref=e80]
+          - generic [ref=e82]: Getting Started with Strength Training
+          - paragraph [ref=e83]: Learn the fundamentals of strength training for beginners.
+          - paragraph [ref=e84]: By Admin User · 1 week ago
+  - generic:
+    - status
